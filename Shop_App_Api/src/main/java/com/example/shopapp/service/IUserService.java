@@ -10,5 +10,6 @@ public interface IUserService {
     List<User> getAllUsers();
 
     User findById(int id);
-    User createUser(CreatingUserForm form) throws DataNotFoundException;
+    User createUser(CreatingUserForm form) throws Exception;
+    String login(String phoneNumber, String password) throws Exception;
 }

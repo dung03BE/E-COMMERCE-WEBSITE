@@ -14,6 +14,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class CreatingUserForm {
     @JsonProperty("fullname")
     private String fullName;

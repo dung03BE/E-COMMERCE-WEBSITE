@@ -38,7 +38,7 @@ public class OrderService implements IOrderService{
     private final ModelMapper modelMapper;
     @Override
     public List<Order> getAllOrders(OrderFilterForm form) {
-        Specification<Order> where = OrderSpecification.buildWhere(form);
+        Specification<Order> where = OrderSpecification.buildWhere( form);
         return orderRepository.findAll(where);
     }
 
