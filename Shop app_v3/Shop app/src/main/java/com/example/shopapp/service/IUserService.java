@@ -1,0 +1,15 @@
+package com.example.shopapp.service;
+
+import com.example.shopapp.exception.DataNotFoundException;
+import com.example.shopapp.entity.User;
+import com.example.shopapp.form.CreatingUserForm;
+
+import java.util.List;
+
+public interface IUserService {
+    List<User> getAllUsers();
+
+    User findById(int id);
+    User createUser(CreatingUserForm form) throws Exception;
+    String login(String phoneNumber, String password) throws Exception;
+}
